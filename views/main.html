@@ -1,0 +1,127 @@
+<div id="home" class="row p-0">
+  <div id="slant-top-right-fill" class="row p-0 m-0">
+    <svg _ngcontent-c4="" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0"
+         xmlns="http://www.w3.org/2000/svg" y="0">
+      <polygon _ngcontent-c4="" class="fill-hotpink" points="0 0 2560 0 0 100"></polygon>
+      <polygon _ngcontent-c4="" class="fill-medpurple" points="2560 0 2560 100 0 0"></polygon>
+    </svg>
+  </div>
+</div>
+
+<div class="row header d-flex flex-wrap">
+  <div class="col-md-6 col-sm-12">
+    <img class="w-100" src="../images/logos/jsyd-friendly-guru-logo.png" alt="Your Friendly Guru - Jennie Brantley">
+  </div>
+  <div class="col-md-6 col-sm-12 center-sm">
+    <div class="h-100 w-100 d-table">
+      <div class="d-table-cell align-middle">
+        <h1>Hi, I'm Jennie!</h1>
+        <h3 class="mt-0">Your Friendly Guru</h3>
+        <p>I'm here to help your small business navigate the ever-changing world of technology and build a positive
+          digital presence. </p>
+        <br>
+        <p><a class="waves-effect waves-light btn" ng-click="contact()"><i class="material-icons left">email</i>contact</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row marketing parallax-container d-flex flex-md-equal p-0">
+  <div>
+    <div class="row">
+      <div class="col-md-12 p-30">
+        <h1 align="center">Services</h1>
+        <br>
+        <!-- List of Services -->
+        <div class="row">
+          <div class="col-md-4 mb-40 px-30" ng-repeat="s in services" id="{{s.title}}">
+            <div class="card sticky-action" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light medpurple">
+                <img class="activator" src="{{s.imgUrl}}">
+              </div>
+              <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">{{s.title}}<i
+            class="material-icons right">more_vert</i></span>
+              </div>
+
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+              <span class="card-title grey-text text-darken-4">{{s.title}}<i
+                class="material-icons right">close</i></span>
+                <p ng-bind-html="s.description"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" align="center" ng-hide="seeMyWorkURL === undefined || seeMyWorkURL === ''">
+          <p>
+            <a class="waves-effect waves-light btn-large" href="{{seeMyWorkURL}}">see my work</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="../images/backgrounds/jsyd_blueprint_bg_transparent.svg"></div>
+</div>
+
+<div id="reviews" class="row marketing px-0 h-400" align="center">
+  <h1>Enlightened Reviews</h1>
+  <!-- List of Reviews -->
+  <div id="reviews-carousel" class="carousel carousel-slider center">
+    <div class="carousel-fixed-item valign-wrapper h-70">
+      <a class="btn btn-carousel waves-effect waves-light left" ng-click="carouselPrev()"><i class="material-icons">chevron_left</i></a>
+      <a class="btn btn-carousel waves-effect waves-light right-absolute" ng-click="carouselNext()"><i
+        class="material-icons">chevron_right</i></a>
+    </div>
+    <div class="carousel-item valign-wrapper" ng-repeat="r in reviews">
+      <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="row">
+          <div class="col s4 offset-s4 l3 offset-l4"><img src="{{r.imgUrl}}" alt="" class="responsive-img img-circle"></div>
+        </div>
+        <p class="m-0 black-text pb-10">
+          <i>{{r.review}}</i>
+        </p>
+        <p class="m-0 pb-20">{{r.author}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row marketing parallax-container d-flex flex-md-equal pb-50 mb-0" align="center">
+  <div>
+    <div class="col-md-8 col-md-offset-2 col-sm-12 p-30">
+      <h1 class="pb-50">Head Guru</h1>
+      <img class="head-guru" src="../images/Jennie2.jpg" alt="Photo of Jennie Brantley">
+
+      <!-- About Paragraph -->
+      <p>I'm a digital technology and marketing guru with over a decade of experience in helping small
+        businesses and individuals market their brand to the online world. I am a full-time digital customer experience
+        manager but I enjoy being a friendly tech guru on the side. I live in Mississippi with my cat, Neelix, who
+        enjoys helping with projects by running across my keyboard and adding his own content whenever he feels like it.
+        I admit I’m a caffeine addict with a writing habit, so in my free time, I'm often in a local coffee shop writing
+        and judging the consistency of my cappuccino foam.</p>
+      <p class="mb-20">As your friendly guru, my mission is to help guide you through the ever-changing technological
+        world; to share my knowledge and experience as you build your online presence for yourself, your brand and your
+        business. If you just want to get a conversation started on how I can help you do that, please email or call me
+        anytime, I’d love to chat or have a cup of coffee.</p>
+      <p>
+        <a class="waves-effect waves-light btn-large" ng-click="contact()"><i class="material-icons left">email</i>contact</a>
+      </p>
+      <p ng-show="email !== undefined && email !== ''">{{email}}</p>
+      <p ng-show="mobile !== undefined && mobile !== ''">{{mobile}}</p>
+    </div>
+  </div>
+  <div class="parallax"><img src="../images/backgrounds/jsyd_blueprint_bg_transparent.svg"></div>
+</div>
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large hotpink pulse">
+    <i class="large material-icons" style="font-size: 2.6rem;">people</i>
+  </a>
+  <ul>
+    <!-- List of Social Options -->
+    <li ng-repeat="s in social"><a class="btn-floating hotpink" href="{{s.link}}" target="_blank"><i
+      class="{{s.icon}}"></i></a></li>
+    <li><a class="btn-floating hotpink" ng-click="contact()"><i class="material-icons">email</i></a></li>
+  </ul>
+</div>

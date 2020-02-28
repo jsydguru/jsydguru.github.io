@@ -1,0 +1,398 @@
+:root {
+  --hotpink: #fe0054;
+  --lightpurple: #a75fb7;
+  --medpurple: #4d1c66;
+  --darkpurple: #2d0a3e;
+  --offpurple: #fefbff;
+  --lightgray: #c3ccd7;
+  --medgray: #53575b;
+  --darkgray: #282a2c;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("styles/Impact.tff") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-family: "Impact";
+  color: var(--hotpink);
+  font-size: 54px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Impact";
+  color: var(--medpurple);
+  font-size: 48px;
+}
+
+h3 {
+  background-color: var(--medgray);
+  color: white;
+  font-family: Impact;
+  padding: 5px 8px;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-family: Impact;
+}
+
+.list-styled {
+  padding-left: 40px !important;
+  list-style-type: square !important;
+}
+
+.list-styled > li {
+  list-style-type: square !important;
+}
+
+.client {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Custom page footer */
+.footer {
+  color: white;
+  /*border-top: 1px solid #e5e5e5;*/
+  background-color: var(--medpurple);
+}
+
+.footer > .row {
+  padding: 40px 50px 10px;
+  margin: 0;
+}
+
+.text-muted, a {
+  color: var(--offpurple);
+}
+
+.text-muted:hover, a:hover,
+.text-muted:focus {
+  color: var(--offpurple);
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+a.waves-effect.waves-light.btn-large,
+a.waves-effect.waves-light.btn-small,
+a.waves-effect.waves-light.btn {
+  text-decoration: none;
+}
+
+.btn, .btn-large, .btn-small {
+  background-color: var(--medpurple);
+  color: white;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover,
+.btn:focus, .btn-large:focus, .btn-small:focus {
+  background-color: var(--medpurple);
+  color: white;
+}
+
+.btn-carousel, .btn-carousel:hover, .btn-carousel:focus {
+  background-color: transparent;
+  color: var(--hotpink);
+  height: auto;
+  width: auto;
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i {
+  font-size: 1.5rem;
+  line-height: inherit;
+}
+
+.btn-carousel > i {
+  font-size: 80pt;
+  line-height: initial;
+}
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  max-width: none !important;
+}
+
+.row {
+  padding: 0 50px;
+  /*margin: 0;*/
+}
+
+.parallax-container {
+  height: 100%;
+}
+
+.parallax {
+  background-color: var(--offpurple);
+}
+
+.parallax > img {
+  opacity: 0.35 !important;
+}
+
+img.activator {
+  /*opacity: 0.6;*/
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.right-absolute {
+  position: absolute;
+  right: 0;
+}
+
+.d-table {
+  display: table;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.d-table-cell {
+  display: table-cell !important;
+}
+
+.align-middle {
+  vertical-align: middle !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.py-30 {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pb-1, .pb-10 {
+  padding-bottom: 10px !important;
+}
+
+.pb-2, .pb-20 {
+  padding-bottom: 20px !important;
+}
+
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hotpink {
+  background-color: var(--hotpink);
+}
+
+.medpurple {
+  background-color: var(--medpurple);
+}
+
+.hotpink:hover {
+  background-color: var(--hotpink);
+}
+
+.fill-white {
+  fill: white;
+}
+
+.fill-hotpink {
+  fill: var(--hotpink);
+}
+
+.fill-medpurple {
+  fill: var(--medpurple);
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.head-guru {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 10px solid var(--hotpink);
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: var(--darkpurple);
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+  color: var(--darkpurple);
+}
+
+.card .card-image img {
+  padding: 50px;
+  color: var(--medgray);
+}
+
+#slant-bottom-right-fill,
+#slant-top-right-fill,
+#slant-top-left-fill {
+  height: fit-content;
+  display: grid;
+}
+
+.carousel {
+  min-height: 400px !important;
+}
+
+.carousel .indicators .indicator-item.active {
+  background-color: var(--darkgray);
+}
+
+.carousel .indicators .indicator-item {
+  background-color: var(--lightgray);
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 768px) {
+
+  .row {
+    padding: 0;
+  }
+
+  /* Remove the padding we set earlier */
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  /*.header {*/
+  /*  margin-bottom: 30px;*/
+  /*}*/
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+  .center-sm {
+    text-align: center;
+  }
+
+  .btn-carousel {
+    display: none;
+  }
+}

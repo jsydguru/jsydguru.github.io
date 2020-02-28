@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Hi, I'm Jennie your friendly neighborhood guru. I'm here to help your small business navigate the ever changing world of technology.">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Best Ok Designs">
+  <title>JSyd - Your Friendly Guru</title>
+  <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"/>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body ng-app="jsydGuruApp" ng-controller="MainCtrl">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container">
+  <div ng-view=""></div>
+</div>
+
+<div class="footer container">
+  <div id="slant-top-right-fill" class="row p-0 m-0">
+    <svg _ngcontent-c4="" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0"
+         xmlns="http://www.w3.org/2000/svg" y="0">
+      <polygon _ngcontent-c4="" class="fill-hotpink" points="2560 0 2560 100 0 0"></polygon>
+    </svg>
+  </div>
+  <div class="row" align="center">
+    <div class="col-md-4 pb-2">
+      <h4>Services</h4>
+      <ul class="list-unstyled text-small">
+        <li ng-repeat="s in services"><a class="text-muted" href="" ng-click="scrollTo(s.title)">{{s.title}}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-4 pb-2">
+      <h4>Social</h4>
+      <ul class="list-unstyled text-small">
+        <li ng-repeat="s in social"><a class="text-muted" href="{{s.link}}" target="_blank">{{s.name}}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-4 pb-2">
+      <h4>Contact</h4>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" ng-click="contact()">Email</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row" align="center">
+    <p>© {{getCurrentYear()}} by Jennie Brantley<br>Website design by <a href="https://bestokdesigns.com/" target="_blank">Best Ok Designs</a></p>
+  </div>
+</div>
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+  !function (A, n, g, u, l, a, r) {
+    A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+      (A[l].q = A[l].q || []).push(arguments)
+    }, A[l].l = +new Date, a = n.createElement(g),
+      r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+  }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+</script>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<script src="bower_components/materialize/dist/js/materialize.js"></script>
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>
