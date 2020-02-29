@@ -106,7 +106,7 @@ app.controller('MainCtrl', function ($scope, ModuleService) {
     {
       name: 'Instagram',
       link: 'https://www.instagram.com/jsydguru/',
-      icon: 'fab fa-instagram-square'
+      icon: 'fab fa-instagram'
     },
     {
       name: 'LinkedIn',
