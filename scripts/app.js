@@ -104,13 +104,13 @@ app.controller('MainCtrl', function ($scope, ModuleService) {
       icon: 'fab fa-facebook-f'
     },
     {
-      name: 'Twitter',
-      link: '',
-      icon: 'fab fa-twitter'
+      name: 'Instagram',
+      link: 'https://www.instagram.com/jsydguru/',
+      icon: 'fab fa-instagram'
     },
     {
       name: 'LinkedIn',
-      link: '',
+      link: 'https://www.linkedin.com/company/jsydguru/',
       icon: 'fab fa-linkedin-in'
     }
   ];
