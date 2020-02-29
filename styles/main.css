@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Impact";
-  src: url("styles/Impact.ttf") format("tff");
+  src: url("styles/Impact.tt") format("tff");
   font-weight: normal;
   font-style: normal;
 }
