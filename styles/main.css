@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: "Impact";
+  font-family: 'Impact';
   src: url("styles/Impact.ttf") format("tff");
   font-weight: normal;
   font-style: normal;
@@ -35,14 +35,14 @@ body {
 }
 
 h1 {
-  font-family: "Impact";
+  font-family: 'Impact';
   color: var(--hotpink);
   font-size: 54px;
   letter-spacing: 1px;
 }
 
 h2 {
-  font-family: "Impact";
+  font-family: 'Impact';
   color: var(--medpurple);
   font-size: 48px;
 }
@@ -50,13 +50,13 @@ h2 {
 h3 {
   background-color: var(--medgray);
   color: white;
-  font-family: Impact;
+  font-family: 'Impact';
   padding: 5px 8px;
   letter-spacing: 0.5px;
 }
 
 h4 {
-  font-family: Impact;
+  font-family: 'Impact';
 }
 
 .list-styled {
