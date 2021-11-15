@@ -1,0 +1,26 @@
+<div id="home" class="row p-0">
+  <div id="slant-top-right-fill" class="row p-0 m-0">
+    <svg _ngcontent-c4="" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0"
+         xmlns="http://www.w3.org/2000/svg" y="0">
+      <polygon _ngcontent-c4="" class="fill-hotpink" points="0 0 2560 0 0 100"></polygon>
+      <polygon _ngcontent-c4="" class="fill-medpurple" points="2560 0 2560 100 0 0"></polygon>
+    </svg>
+  </div>
+</div>
+
+<div id="work-request" class="row marketing px-0 h-400" align="center">
+  <h1>Work Request</h1>
+  <script type="text/javascript" src="https://form.jotform.com/jsform/203257707697062"></script>
+</div>
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large hotpink pulse">
+    <i class="large material-icons" style="font-size: 2.6rem;">people</i>
+  </a>
+  <ul>
+    <!-- List of Social Options -->
+    <li ng-repeat="s in social"><a class="btn-floating hotpink" href="{{s.link}}" target="_blank"><i
+      class="{{s.icon}}"></i></a></li>
+    <li><a class="btn-floating hotpink" ng-click="contact()"><i class="material-icons">email</i></a></li>
+  </ul>
+</div>

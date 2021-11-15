@@ -15,6 +15,11 @@ var app = angular.module('jsydGuruApp', ['ngAnimate', 'ngCookies', 'ngResource',
       controller: 'MainCtrl',
       controllerAs: 'main'
     })
+    .when('/work-request', {
+      templateUrl: 'views/work-request.html',
+      controller: 'MainCtrl',
+      controllerAs: 'main'
+    })
     .when('/style', {
       templateUrl: 'views/style-guide.html',
       controller: 'MainCtrl',
