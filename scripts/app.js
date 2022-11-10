@@ -45,8 +45,8 @@ app.service('ModuleService', function () {
  */
 app.controller('MainCtrl', function ($scope, ModuleService) {
 
-  $scope.email = 'jsydguru@outlook.com';
-  $scope.mobile = '601.274.4410';
+  $scope.email = 'jennie@jsyd.guru';
+  $scope.mobile = '601.278.3209';
   $scope.seeMyWorkURL = '';
 
   $scope.services = [
